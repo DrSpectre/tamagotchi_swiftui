@@ -80,6 +80,10 @@ class ControladorGeneral{
                     estado = .Inanición
                 }
                 
+                else if tamagotchi.hambre < 40{
+                    estado = .Neutro
+                }
+                
             case .Inanición:
                 if tamagotchi.hambre > 100{
                     estado = .Muerte
@@ -90,6 +94,15 @@ class ControladorGeneral{
         }
     }
     
+    
+    func alimentar() -> Bool{
+        if tamagotchi.esta_vivo{
+            tamagotchi.hambre -= 20
+            return true
+        }
+        
+        return false
+    }
 }
 
 

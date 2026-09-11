@@ -10,7 +10,26 @@ struct MascotaEstado: View {
     @Environment(ControladorGeneral.self) var mascota
     
     var body: some View {
-        Text("El estado de tu mascota es: \(mascota.estado)")
+        switch(mascota.estado){
+            case .Neutro:
+                Rectangle()
+                    .foregroundStyle(Color.gray)
+            case .Hambriento:
+                Rectangle()
+                    .foregroundStyle(Color.orange)
+                
+            case .Inanición:
+                Rectangle()
+                    .foregroundStyle(Color.red)
+            case .Muerte:
+                Text("QUE MAS QUIERES SI ESTA MUERTO")
+                    .fontWidth(.expanded)
+                    .fontWeight(.heavy)
+                
+            default:
+                Text("NO se que paso")
+        }
+        
     }
 }
 

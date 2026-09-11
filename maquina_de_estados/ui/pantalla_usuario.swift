@@ -50,6 +50,10 @@ struct PantallaInicial: View {
         Button("Actualizar tamagotchi"){
             controlador_tamagotchi.actualizar_medidores()
         }
+        
+        Button("Alimentar"){
+            controlador_tamagotchi.alimentar()
+        }
     }
 }
 
