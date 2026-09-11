@@ -7,12 +7,20 @@
 import SwiftUI
 
 struct PantallaInicial: View {
-    @State var controlador_tamagotchi: ControladorGeneral = ControladorGeneral()
+    @Environment(ControladorGeneral.self) var controlador_tamagotchi
     
     @State var nombre_nuevo = ""
     
     var body: some View {
         Text("Su nombre: \(controlador_tamagotchi.tamagotchi.nombre)")
+        
+        Text("Hambre actual: \(controlador_tamagotchi.tamagotchi.hambre)")
+        Text("Cansancio: \(controlador_tamagotchi.tamagotchi.cansancio)")
+        Text("Limpio: \(controlador_tamagotchi.tamagotchi.limpio)")
+        Text("Edad: \(controlador_tamagotchi.tamagotchi.edad)")
+        
+        
+        MascotaEstado()
         
         if(controlador_tamagotchi.tamagotchi.esta_vivo){
             Text("Tu tamagotchi esta vivo.")
@@ -38,11 +46,16 @@ struct PantallaInicial: View {
                 // controlador_tamagotchi.revivir()
             }
         }
+        
+        Button("Actualizar tamagotchi"){
+            controlador_tamagotchi.actualizar_medidores()
+        }
     }
 }
 
 #Preview {
     PantallaInicial()
+        .environment(ControladorGeneral())
 }
 
 
