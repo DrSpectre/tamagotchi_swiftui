@@ -13,5 +13,6 @@ struct Tamagotchi{
     var hambre: Int
     var cansancio: Int
     var limpio: Int
-    var aburrido: Int 
+    var aburrido: Int
+    var enojado: Int = 0
 }

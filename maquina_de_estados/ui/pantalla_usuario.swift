@@ -54,6 +54,12 @@ struct PantallaInicial: View {
         Button("Alimentar"){
             controlador_tamagotchi.alimentar()
         }
+        
+        Button("Darle un sape"){
+            let comando = ComandoTamagotchi.darle_un_sape
+            
+            controlador_tamagotchi.procesar_comando(comando)
+        }
     }
 }
 
