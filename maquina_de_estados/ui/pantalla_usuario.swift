@@ -12,28 +12,27 @@ struct PantallaInicial: View {
     @State var nombre_nuevo = ""
     
     var body: some View {
-        Text("Su nombre: \(controlador_tamagotchi.tamagotchi.nombre)")
-        
-        Text("Hambre actual: \(controlador_tamagotchi.tamagotchi.hambre)")
-        Text("Cansancio: \(controlador_tamagotchi.tamagotchi.cansancio)")
-        Text("Limpio: \(controlador_tamagotchi.tamagotchi.limpio)")
-        Text("Edad: \(controlador_tamagotchi.tamagotchi.edad)")
+        Text("Su Estado: \(controlador_tamagotchi.estado)")
         
         
         MascotaEstado()
         
-        if(controlador_tamagotchi.tamagotchi.esta_vivo){
-            Text("Tu tamagotchi esta vivo.")
-        }
-        else {
-            Text("ESTA MUERTO Y TU LO MATASTE")
-        }
-        
         
         TextField("place holder: Nombre nuevo de tu tamagotchi", text: $nombre_nuevo)
+        
+        Button {
+            controlador_tamagotchi.cambiar_nombre("hola")
+        }
+        label: {
+            VistaJeep(texto: "Cambiar nombre")
+        }
+        .buttonStyle(.plain)
+        .frame(height: 50)
+    
         Button("cambiar nombre"){
             controlador_tamagotchi.cambiar_nombre(nombre_nuevo)
         }
+        .buttonStyle(.plain)
         
         HStack{
             Button("Dale con la pala"){
@@ -41,10 +40,6 @@ struct PantallaInicial: View {
             }
             
             Spacer()
-            
-            Button("Resucitar") {
-                // controlador_tamagotchi.revivir()
-            }
         }
         
         Button("Actualizar tamagotchi"){

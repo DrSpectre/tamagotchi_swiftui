@@ -16,11 +16,11 @@ enum ComandoTamagotchi: Comando{
 
 extension ControladorGeneral: ProcesarComandos{
     func procesar_comando(_ comando: Comando) -> Bool {
-        if(!(comando is ComandoTamagotchi)){
+        guard let comando = comando as? ComandoTamagotchi else {
             return false
         }
         
-        switch(comando as! ComandoTamagotchi){
+        switch(comando){
             case .darle_un_dulce:
                 entretener()
                 alimentar()
