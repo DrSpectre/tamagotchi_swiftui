@@ -8,6 +8,7 @@ import SwiftUI
 
 struct VistaJeep: View {
     var texto: String
+    var imagen: String
     
     var body: some View {
         ZStack{
@@ -15,8 +16,11 @@ struct VistaJeep: View {
                 .foregroundStyle(Color.gray)
             
             HStack{
-                Circle()
-                    .foregroundStyle(Color.pink)
+                Image(imagen)
+                    .resizable()
+                    .scaledToFit()
+                    .clipShape(Circle())
+                
                 Spacer()
                 Text(texto)
                 Spacer()
@@ -30,5 +34,5 @@ struct VistaJeep: View {
 }
 
 #Preview {
-    VistaJeep(texto: "Place holder")
+    VistaJeep(texto: "Place holder", imagen: "imagen_1")
 }

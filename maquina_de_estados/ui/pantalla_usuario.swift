@@ -24,7 +24,7 @@ struct PantallaInicial: View {
             controlador_tamagotchi.cambiar_nombre("hola")
         }
         label: {
-            VistaJeep(texto: "Cambiar nombre")
+            VistaJeep(texto: "Cambiar nombre", imagen: "imagen_2")
         }
         .buttonStyle(.plain)
         .frame(height: 50)

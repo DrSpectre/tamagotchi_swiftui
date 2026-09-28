@@ -13,8 +13,9 @@ struct MaquinaDeEstadosApp: App {
     
     var body: some Scene {
         WindowGroup {
-            PantallaInicial()
-                .environment(control)
+            //PantallaInicial()
+             //   .environment(control)
+            VistaAR()
         }
     }
 }
