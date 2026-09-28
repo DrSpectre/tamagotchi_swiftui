@@ -19,6 +19,8 @@ struct VistaAR: View {
             cajita.components.set(InputTargetComponent())
             cajita.components.set(CollisionComponent(shapes: [ShapeResource.generateBox(size: SIMD3<Float>(1, 1, 1))]))
             
+            cajita.model?.materials = [SimpleMaterial(color: .red, isMetallic: true)]
+            
             cajita.name = "HOLA MUNDO"
             
             cajita.setParent(imagen_ar)
