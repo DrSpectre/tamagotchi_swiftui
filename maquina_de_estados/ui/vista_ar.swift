@@ -12,16 +12,10 @@ struct VistaAR: View {
         RealityView{ contenido in
             contenido.camera = .spatialTracking
             
-            let cajita = ModelEntity(mesh: .generateBox(size: 1))
-            
             let imagen_ar = AnchorEntity(.image(group: "archivos_ar", name: "recurso_1"))
             
-            cajita.components.set(InputTargetComponent())
-            cajita.components.set(CollisionComponent(shapes: [ShapeResource.generateBox(size: SIMD3<Float>(1, 1, 1))]))
-            
+            let cajita = ModelEntity(mesh: .generateBox(size: 0.1))
             cajita.model?.materials = [SimpleMaterial(color: .red, isMetallic: true)]
-            
-            cajita.name = "HOLA MUNDO"
             
             cajita.setParent(imagen_ar)
             

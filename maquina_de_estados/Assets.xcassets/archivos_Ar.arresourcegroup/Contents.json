@@ -5,6 +5,12 @@
   },
   "resources" : [
     {
+      "filename" : "img_1.arreferenceimage"
+    },
+    {
+      "filename" : "img_2.arreferenceimage"
+    },
+    {
       "filename" : "recurso_1.arreferenceimage"
     }
   ]

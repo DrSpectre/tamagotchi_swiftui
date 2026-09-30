@@ -1,0 +1,61 @@
+{
+  "1A1189C7-A546-46D5-8ED1-73514A213EE3" : {
+    "objectMetadataList" : [
+      [
+        "1A1189C7-A546-46D5-8ED1-73514A213EE3",
+        "Root",
+        "Timeline2"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1A1189C7-A546-46D5-8ED1-73514A213EE3",
+        "Root",
+        "Timeline",
+        "Track"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1A1189C7-A546-46D5-8ED1-73514A213EE3",
+        "Root",
+        "personaje"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1A1189C7-A546-46D5-8ED1-73514A213EE3",
+        "Root",
+        "Timeline2",
+        "Track"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1A1189C7-A546-46D5-8ED1-73514A213EE3",
+        "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1A1189C7-A546-46D5-8ED1-73514A213EE3",
+        "Root",
+        "Timeline"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      }
+    ]
+  }
+}

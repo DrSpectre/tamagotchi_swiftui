@@ -1,0 +1,11 @@
+{
+  "pathsToIds" : {
+    "\/tamagotchi\/Sources\/tamagotchi\/tamagotchi.rkassets\/Scene.usda" : "23A48CE8-ADF2-40B7-9904-0048E1925AB8",
+    "\/tamagotchi\/Sources\/tamagotchi\/tamagotchi.rkassets\/Untitled%20Scene.usda" : "1A1189C7-A546-46D5-8ED1-73514A213EE3"
+  },
+  "projectID" : 6337703797414710668,
+  "uuidToIntID" : {
+    "1A1189C7-A546-46D5-8ED1-73514A213EE3" : 7943583022256805785,
+    "23A48CE8-ADF2-40B7-9904-0048E1925AB8" : -3752562405839933198
+  }
+}

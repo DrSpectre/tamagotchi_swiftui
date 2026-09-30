@@ -15,7 +15,7 @@ struct MaquinaDeEstadosApp: App {
         WindowGroup {
             //PantallaInicial()
              //   .environment(control)
-            VistaAR()
+            PruebaVistaAR()
         }
     }
 }
